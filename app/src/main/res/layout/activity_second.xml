@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/IDresgist"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:hint="사용할 아이디를 입력하시오." />
+
+        <Button
+            android:id="@+id/isitOK"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="중복확인" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/passwordregist"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:hint="특수문자, 영어, 숫자 사용." />
+
+        <Button
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="비밀번호 확인" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:hint="사용자 이름" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dial1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="010" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/dial2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="****" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/dial3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="****" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소 " />
+
+        <EditText
+            android:id="@+id/addressregist"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="당신의 주소를 입력하시오" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="회원가입 약관" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="사용자 정보 제공동의" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="개인정보보호 위 어플리케이션은 이용자의 정보 수집시 계정등록에 필요한 최소한의 정보를 수집합니다.\n1. 희망ID\t\t2. 비밀번호\n3. 이름\t\t\t4. 전화변호 \n6. 주소" />
+    <RadioGroup
+        android:id="@+id/DorA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/decline"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Decline" />
+
+        <RadioButton
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="Accept" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="계정등록" />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="취소" />
+    </LinearLayout>
+
+</LinearLayout>
